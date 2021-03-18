@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+
+        /*
+        var num1 = prompt('Digite o valor de num1')
+        var num2 = prompt('Digite o valor de num2')
+
+        num1 = parseInt(num1)
+        num2 = parseInt(num2)
+
+        document.write('A soma entre ' + num1 +' e ' + num2 + ' é: ' + (num1 + num2) + '<br>' )
+        document.write('A subtração entre ' + num1 +' e ' + num2 + ' é: ' + (num1 - num2) + '<br>')
+        document.write('A multiplicação entre ' + num1 +' e ' + num2 + ' é: ' + (num1 * num2) + '<br>')
+        document.write('A divisão ' + num1 +' e ' + num2 + ' é: ' + (num1 / num2) + '<br>')
+        document.write('A módulo ' + num1 +' e ' + num2 + ' é: ' + (num1 % num2) + '<br>')
+        */
+        
+        var nome = prompt('Insira o nome: ')
+        var altura = prompt('Insira a altura em centímetros: ')
+        var peso = prompt('Insira o peso: ')
+
+        altura = parseFloat(altura)
+        altura = altura / 100
+
+        var massaCorporal = peso / (altura * altura)
+        document.write(massaCorporal + '<br>')
+
+        if (massaCorporal < 16) {
+            document.write(nome + ' Possui índice de massa corporal igual a ' + massaCorporal + ', sendo classificado como: Baixo peso muito grave.')
+            
+        } else if (massaCorporal >= 16 && massaCorporal <= 16.99 ) {
+            document.write(nome + ' Possui índice de massa corporal igual a ' + massaCorporal + ', sendo classificado como: Baixo peso grave.')
+        } else if (massaCorporal >= 17 && massaCorporal <= 18.49 ) {
+            document.write(nome + ' Possui índice de massa corporal igual a ' + massaCorporal + ', sendo classificado como: Baixo peso.')
+        } else if (massaCorporal >= 18.50 && massaCorporal <= 24.99 ) {
+            document.write(nome + ' Possui índice de massa corporal igual a ' + massaCorporal + ', sendo classificado como: Peso normal.')
+        } else if (massaCorporal >= 25 && massaCorporal <= 29.99 ) {
+            document.write(nome + ' Possui índice de massa corporal igual a ' + massaCorporal + ', sendo classificado como: Sobrepeso. ')
+        } else if (massaCorporal >= 30 && massaCorporal <= 34.99 ) {
+            document.write(nome + ' Possui índice de massa corporal igual a ' + massaCorporal + ', sendo classificado como: Obesidade grau I ')
+        } else if (massaCorporal >= 35 && massaCorporal <= 39.99 ) {
+            document.write(nome + ' Possui índice de massa corporal igual a ' + massaCorporal + ', sendo classificado como: Obesidade grau II ')
+        } else if (massaCorporal >= 40) {
+            document.write(nome + ' Possui índice de massa corporal igual a ' + massaCorporal + ', sendo classificado como: Obesidade grau III ')
+        }
+
+
+        /*
+
+        if (massaCorporal < 16) {
+            document.write('Baixo peso, muito grave')
+            
+        } else if (massaCorporal >= 16 && massaCorporal <= 16.99 ) {
+            document.write('Baixo peso grave')
+        } else if (massaCorporal >= 17 && massaCorporal <= 18.49 ) {
+            document.write('Baixo peso')
+        } else if (massaCorporal >= 18.50 && massaCorporal <= 24.99 ) {
+            document.write('Peso normal')
+        } else if (massaCorporal >= 25 && massaCorporal <= 29.99 ) {
+            document.write('Sobrepeso')
+        } else if (massaCorporal >= 30 && massaCorporal <= 34.99 ) {
+            document.write('Obesidade grau I')
+        } else if (massaCorporal >= 35 && massaCorporal <= 39.99 ) {
+            document.write('Obesidade grau II')
+        } else if (massaCorporal >= 40) {
+            document.write('Obesidade grau III')
+        }
+
+        */
+
+        //document.write(nome + ' Possui índice de massa corporal igual a ' + massaCorporal + ', sendo classificado como: ')
+
+
+
+    </script>
+    
+</head>
+<body>
+ 
+    
+</body>
+</html>
